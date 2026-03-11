@@ -30,7 +30,7 @@ def get_data_loaders(batch_size=64): # Her iteresyonda işlenecek veri miktarı
 
 train_loader,test_loader=get_data_loaders()
 
-# data visualization
+# data visualization-----------------------------------------------------------------------------------
 def visualize_samples(loader,n):
     images,labels = next(iter(loader)) # ilk batch den görüntü ve etiketleri alalım
     fig,axes=plt.subplots(1,n,figsize=(10,5))
@@ -42,7 +42,7 @@ def visualize_samples(loader,n):
 
 visualize_samples(train_loader,4)
 
-# define ANN model
+# Create ANN model-----------------------------------------------------------------------------------
 class NoralNetwork(nn.Module): #pythorch'un 'nn.Module' sınıfndan miras alınır
 
     def __init__(self):
@@ -80,9 +80,9 @@ define_loss_and_optimizer = lambda model:(
 )
 criterion,optimizer = define_loss_and_optimizer(model)
 
-# train
+# train---------------------------------------------------------------------------
 
-def train_model(model,train_loader,criterion,optimizer,epochs=10):
+def train_model(model,train_loader,criterion,optimizer,epochs=5):
     
     model.train() # modelimizi eğitim moduna alalım
     train_losses=[] # her bir epoch sonucunda elde edilen loss degerlerini saklamak için bir liste oluştur
@@ -114,10 +114,10 @@ def train_model(model,train_loader,criterion,optimizer,epochs=10):
     plt.legend()
     plt.show()
 
-train_model(model,train_loader,criterion,optimizer,epochs=1)
+train_model(model,train_loader,criterion,optimizer,epochs=2) #The number "epochs" is determined.
 
 
-# test
+# test----------------------------------------
 def test_model(model,test_loader):
     model.eval()
     correct=0  # dogru tahmin sayacı
@@ -135,12 +135,11 @@ def test_model(model,test_loader):
 
 test_model(model,test_loader)
 
-#main
+"""if __name__=="main":
 
-if __name__=="main":
     train_loader,test_loader = get_data_loaders()
     visualize_samples(train_loader,5)
     model =NoralNetwork().to(device)
     criterion,optimizer=define_loss_and_optimizer(model)
     train_model(model,train_loader,criterion,optimizer)
-    test_model(model,test_loader)
+    test_model(model,test_loader)"""
