@@ -29,6 +29,19 @@ python main.py
 ## 📊 Eğitim Sonuçları
 Burada modelin eğitim sırasında elde ettiği loss grafiğini görebilirsiniz:
 
+<p align="center">
+  <img src="images/Epoch-Loss.png" alt="Model Eğitim Grafiği" width="600">
+  <br>
+  <i>Modelin eğitim sürecindeki kayıp (loss) değişim grafiği</i>
+</p>
+
+<p align="center">
+  <img src="images/Images-Label.png" alt="Model Eğitim Grafiği" width="600">
+  <br>
+  <i>Images-Label Eşleşmesi Grafiği </i>
+</p>
+
+
 
 
 
