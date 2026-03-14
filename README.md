@@ -26,6 +26,23 @@ Terminal üzerinden ana dosyanızı  şu komutla başlatın:
 python main.py
 ```
 ---
-## Sonuçlar:
+## 📊 Eğitim Sonuçları
+Burada modelin eğitim sırasında elde ettiği loss grafiğini görebilirsiniz:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
