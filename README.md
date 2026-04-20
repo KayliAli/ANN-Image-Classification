@@ -2,6 +2,8 @@
 
 Bu proje, PyTorch kütüphanesi kullanılarak geliştirilmiş bir Yapay Sinir Ağı (ANN) modelidir. Projenin amacı, el yazısı rakamlardan oluşan ünlü **MNIST** veri setini kullanarak 0 ile 9 arasındaki rakamları yüksek doğrulukla tanımaktır.
 
+
+
 ## 🚀 Proje Özellikleri
 - **Veri Seti:** MNIST (60,000 Eğitim, 10,000 Test örneği).
 - **Model Mimarisi:** 3 katmanlı Tam Bağlantılı (Fully Connected) Sinir Ağı.
