@@ -1,6 +1,6 @@
 # 🔢 MNIST Rakam Sınıflandırma (PyTorch ANN)
 
-Bu proje, PyTorch kütüphanesi kullanılarak geliştirilmiş bir Yapay Sinir Ağı (ANN) modelidir. Projenin amacı, el yazısı rakamlardan oluşan ünlü **MNIST** veri setini kullanarak 0 ile 9 arasındaki rakamları yüksek doğrulukla tanımaktır.
+Bu proje,PyTorch kütüphanesi kullanılarak geliştirilmiş bir Yapay Sinir Ağı (ANN) modelidir. Projenin amacı, el yazısı rakamlardan oluşan ünlü **MNIST** veri setini kullanarak 0 ile 9 arasındaki rakamları yüksek doğrulukla tanımaktır.
 
 
 
